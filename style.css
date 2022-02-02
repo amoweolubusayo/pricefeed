@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans";
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #52be80 0%,
+    rgba(126, 115, 255, 0.48) 100%
+  );
+  height: 100vh;
+  overflow: hidden;
+}
+body .container > div {
+  margin-top: 0 !important;
+}
+body .container > div::before {
+  content: "";
+  display: block;
+  height: 500px;
+  background-image: url("https://lh3.googleusercontent.com/ULjfyo4LJhtV3J9K7lu1xh0YZQBa6WHPp-cwlV2C9sUIyTpgSlv554mh_97fRXsziOIu9xwpukl5NQoDbkE3mlXlWR8zU7qcWQsxVg=w388");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body .container > div::before {
+    height: 400px;
+  }
+}
+
+.container {
+  background-color: #fff;
+  height: 100%;
+}
+
+.container .container div div h2 {
+  font-weight: 700;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  color: #777;
+}
+.container .container div div h2::after {
+  content: "";
+  display: block;
+  background-color: #ddd;
+  height: 1px;
+  margin-top: 10px;
+}
+
+section div div {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px !important;
+}
+
+section h3 {
+  width: 100%;
+  max-width: 400px;
+  color: #444;
+  background-color: rgba(130, 224, 170, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+
+#price::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-image: url("./eth.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#price {
+  display: block;
+  font-style: normal;
+  color: #52be80;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
