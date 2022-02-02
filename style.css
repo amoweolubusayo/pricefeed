@@ -13,10 +13,10 @@ body {
   );
   height: 100vh;
 }
-body .container > div {
+body > .container > div {
   margin-top: 0 !important;
 }
-body .container > div::before {
+body > .container > div::before {
   content: "";
   display: block;
   height: 300px;
@@ -29,7 +29,7 @@ body .container > div::before {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  body .container > div::before {
+  body > .container > div::before {
     height: 200px;
   }
 }
